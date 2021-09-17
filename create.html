@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>新規作成</title>
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        <h1>Flask Study Note - {{ title }}</h1>
+
+        <form action="/register" method="post">
+            <label>タイトル：</label><input type="text" name="title">
+            <p></p>
+            <label>本文：</label><br>
+            <textarea name="body" rows="10" cols="50"></textarea>
+            <p></p>
+            <button type="submit">送信</button>
+        </form>
+
+        <p><a href="/">TOPに戻る</a></p>
+
+        <footer>
+            <p>◯◯✕✕△△</p>
+        </footer>
+    </body>
+</html>

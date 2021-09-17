@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>TOP</title>
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        <!--flashメッセージここから-->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p style="background-color: lightblue;">
+                    <b>{{ message }}</b></p>
+                {% endfor %}
+            {% endif %}
+        {% endwith%}
+        <!--flashメッセージここまで-->
+        <h1>Flask Study Note - {{ title }}</h1>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>タイトル</th>
+                <th>作成日</th>
+            </tr>
+            {% for i in all_data %}
+            <tr>
+                <td>{{ i.id }}</td>
+                <td><a href="/detail?id={{ i.id }}">{{ i.title }}</a></td>
+                <td>{{ i.date.date() }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <p><a href="/create">新規作成</a></p>
+
+        <footer>
+            <p>◯◯✕✕△△</p>
+        </footer>
+    </body>
+</html>
+

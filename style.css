@@ -1,0 +1,27 @@
+body {
+    padding: 30px;
+    background-color: lightgray;
+  }
+
+table {
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+}
+table th{
+    background-color: black;
+    color: white;
+    border: solid 1px black
+}
+table td{
+    border: solid 1px black
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    background-color: black;
+    color: white;
+}
