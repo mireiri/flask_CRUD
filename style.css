@@ -13,10 +13,10 @@ table {
 table th{
     background-color: black;
     color: white;
-    border: solid 1px black
+    border: solid 1px black;
 }
 table td{
-    border: solid 1px black
+    border: solid 1px black;
 }
 footer{
     display: flex;
