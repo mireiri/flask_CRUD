@@ -9,10 +9,11 @@
         <h1>Flask Study Note - {{ title }}</h1>
 
         <form action="/register" method="post">
-            <label>タイトル：<input type="text" name="title"></label>
+            <label>タイトル：
+                <input type="text" name="title">
+            </label>
             <p></p>
-            <label>本文：
-                <br>
+            <label>本文：<br>
                 <textarea name="body" rows="10" cols="50"></textarea>
             </label>
             <p></p>
