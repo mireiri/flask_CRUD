@@ -10,12 +10,14 @@
 
         <form action="/update" method="post">
             <input type="hidden" name="id" value="{{ edit_data.id }}">
-            <label>タイトル：</label>
-            <input type="text" name="title" value="{{ edit_data.title }}">
+            <label>タイトル：
+                <input type="text" name="title" value="{{ edit_data.title }}">
+            </label>
             <p></p>
-            <label>本文：</label>
-            <br>
-            <textarea name="body" rows="10" cols="50">{{ edit_data.body }}</textarea>
+            <label>本文：
+                <br>
+                <textarea name="body" rows="10" cols="50">{{ edit_data.body }}</textarea>
+            </label>
             <p></p>
             <button type="submit">送信</button>
         </form>
